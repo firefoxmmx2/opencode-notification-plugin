@@ -1,0 +1,35 @@
+name: 📝 文档改进
+description: 建议改进文档内容
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢帮助改进文档！
+  
+  - type: textarea
+    id: problem
+    attributes:
+      label: 当前问题
+      description: 文档存在什么问题？
+      placeholder: 例如：XX 部分的说明不够清楚...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 改进建议
+      description: 你建议如何改进？
+    validations:
+      required: true
+  
+  - type: input
+    id: file
+    attributes:
+      label: 相关文件
+      description: 涉及的文档文件
+      placeholder: README.md / INSTALL.md / etc.
+    validations:
+      required: false

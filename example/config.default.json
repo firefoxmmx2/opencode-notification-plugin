@@ -1,0 +1,15 @@
+// 示例 1：默认配置
+{
+  "enabled": true,
+  "templates": {
+    "idle": {
+      "title": "OpenCode",
+      "message": "{sessionTitle} - 任务完成!"
+    },
+    "error": {
+      "title": "OpenCode",
+      "message": "{sessionTitle} - 任务出错!",
+      "urgency": "critical"
+    }
+  }
+}

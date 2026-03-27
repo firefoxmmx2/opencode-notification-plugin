@@ -1,0 +1,15 @@
+// 示例 2：简洁风格
+{
+  "enabled": true,
+  "templates": {
+    "idle": {
+      "title": "✅ 完成",
+      "message": "{sessionTitle}"
+    },
+    "error": {
+      "title": "❌ 错误",
+      "message": "{sessionTitle}",
+      "urgency": "critical"
+    }
+  }
+}

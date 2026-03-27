@@ -1,0 +1,26 @@
+{
+  "name": "opencode-notification-plugin",
+  "version": "1.0.0",
+  "description": "OpenCode TUI 任务完成通知插件 - 在任务完成后发送系统通知",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node",
+    "dev": "bun build src/index.ts --outdir dist --target node --watch"
+  },
+  "keywords": [
+    "opencode",
+    "notification",
+    "plugin",
+    "tui"
+  ],
+  "author": "firefoxmmx2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/firefoxmmx2/opencode-notification-plugin.git"
+  }
+}

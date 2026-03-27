@@ -1,0 +1,35 @@
+name: ❓ 问题咨询
+description: 询问插件使用相关问题
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        有任何问题都欢迎提出！我们会尽力解答。
+  
+  - type: textarea
+    id: question
+    attributes:
+      label: 你的问题
+      description: 请详细描述你的问题
+      placeholder: 例如：如何配置 XX 功能？
+    validations:
+      required: true
+  
+  - type: input
+    id: system
+    attributes:
+      label: 系统信息
+      description: 你的操作系统是什么？
+      placeholder: Ubuntu / macOS / Windows
+    validations:
+      required: false
+  
+  - type: textarea
+    id: context
+    attributes:
+      label: 补充信息
+      description: 任何其他相关的信息
+    validations:
+      required: false

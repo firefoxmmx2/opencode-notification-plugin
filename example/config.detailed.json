@@ -1,0 +1,15 @@
+// 示例 3：详细风格
+{
+  "enabled": true,
+  "templates": {
+    "idle": {
+      "title": "🎉 OpenCode 任务完成",
+      "message": "会话「{sessionTitle}」已成功完成，请查看结果！"
+    },
+    "error": {
+      "title": "⚠️ OpenCode 任务失败",
+      "message": "会话「{sessionTitle}」执行过程中遇到错误",
+      "urgency": "critical"
+    }
+  }
+}

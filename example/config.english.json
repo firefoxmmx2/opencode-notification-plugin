@@ -1,0 +1,15 @@
+// 示例 4：英文通知
+{
+  "enabled": true,
+  "templates": {
+    "idle": {
+      "title": "OpenCode",
+      "message": "Task completed: {sessionTitle}"
+    },
+    "error": {
+      "title": "OpenCode Error",
+      "message": "Task failed: {sessionTitle}",
+      "urgency": "critical"
+    }
+  }
+}
