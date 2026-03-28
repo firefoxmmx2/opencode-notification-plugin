@@ -1,8 +1,10 @@
 # OpenCode Notification Plugin 安装指南
 
-## 快速开始
+## 系统要求
 
-### 方法 1: 使用 npm 包（推荐）
+- **Linux**: 需要 `notify-send` 命令（大多数桌面环境已预装）
+
+## 快速开始
 
 1. **编辑配置文件**
    
@@ -46,7 +48,7 @@
    opencode
    ```
 
-### 方法 2: 手动安装插件文件
+## 安装方法
 
 1. **下载插件文件**
    
@@ -179,39 +181,4 @@
 }
 ```
 
-### Q: 如何在 macOS 上使用？
-
-**A:** 插件会自动检测 macOS 并使用 `osascript` 发送通知，无需额外配置。
-
-### Q: Windows 支持吗？
-
-**A:** 支持 Windows 10/11，使用 PowerShell 发送 Toast 通知。
-
-## 卸载
-
-### 使用 npm 安装的
-
-从 `opencode.json` 中移除插件配置：
-
-```json
-{
-  // 删除这一行
-  "plugin": ["opencode-notification-plugin"]
-}
-```
-
-### 手动安装的
-
-```bash
-# 删除插件文件
-rm ~/.config/opencode/plugins/notification.js
-
-# 删除配置文件
-rm ~/.config/opencode/notification.json
-```
-
-## 获取帮助
-
-- 查看 [README.md](../README.md) 了解更多功能
-- 提交 [Issue](https://github.com/firefoxmmx2/opencode-notification-plugin/issues) 反馈问题
-- 查看 [示例配置](../example/) 获取更多配置灵感
+### Q: 通知不显示怎么办？

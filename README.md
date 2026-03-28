@@ -13,32 +13,15 @@
 ## 系统要求
 
 - **Linux**: 需要 `notify-send` 命令（大多数桌面环境已预装）
-- **macOS**: 需要 `osascript` 命令（系统自带）
-- **Windows**: 需要 Windows 10 及以上版本
 
 ## 安装方法
 
-### 方法一：通过 npm 安装（推荐）
-
-在 `opencode.json` 配置文件中添加：
-
-```json
-{
-  "$schema": "https://opencode.ai/config.json",
-  "plugin": ["opencode-notification-plugin"]
-}
-```
-
-### 方法二：手动安装
-
-1. 克隆或下载本仓库
-
-2. 将 `notification.js` 文件复制到 OpenCode 插件目录：
+1. 将 `dist/index.js` 文件复制到 OpenCode 插件目录：
    ```bash
    cp notification.js ~/.config/opencode/plugins/
    ```
 
-3. 创建配置文件 `~/.config/opencode/notification.json`：
+2. 创建配置文件 `~/.config/opencode/notification.json`：
    ```json
    {
      "enabled": true,
@@ -56,7 +39,7 @@
    }
    ```
 
-4. 重启 OpenCode TUI
+3. 重启 OpenCode TUI
 
 ## 配置说明
 
@@ -181,14 +164,6 @@
 3. **确认插件已加载**
    查看 OpenCode 启动日志，确认插件成功加载
 
-### macOS 用户
-
-macOS 使用不同的通知命令，插件会自动检测系统并使用相应的通知方式。
-
-### Windows 用户
-
-Windows 10/11 支持 Toast 通知。如果遇到兼容性问题，请提交 issue。
-
 ## 开发
 
 ### 本地开发测试
@@ -211,14 +186,17 @@ Windows 10/11 支持 Toast 通知。如果遇到兼容性问题，请提交 issu
 
 4. 将生成的 `dist/index.js` 复制到 `~/.config/opencode/plugins/` 进行测试
 
-## 发布到 npm
+## 发布
 
 ```bash
 # 更新 package.json 中的版本号
 npm version patch  # 或 minor, major
 
-# 发布
-npm publish
+# 构建
+bun run build
+
+# 发布到 GitHub
+git push origin main
 ```
 
 ## 贡献
