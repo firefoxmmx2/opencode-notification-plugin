@@ -1,3 +1,5 @@
+[🇨🇳 中文](AI_INSTALL.md) | [🇺🇸 English](AI_INSTALL.en.md)
+
 # AI 助手安装指南
 
 本指南帮助 AI 助手（如 OpenCode、Claude 等）快速安装和配置通知插件。

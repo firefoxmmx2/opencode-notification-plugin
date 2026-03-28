@@ -1,3 +1,5 @@
+[🇨🇳 中文](PUBLISH_GUIDE.md) | [🇺🇸 English](PUBLISH_GUIDE.en.md)
+
 # 🚀 发布到 GitHub 的步骤
 
 ## 1. 创建 GitHub 仓库

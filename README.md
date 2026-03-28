@@ -1,3 +1,5 @@
+[🇨🇳 中文](README.md) | [🇺🇸 English](README.en.md)
+
 # OpenCode Notification Plugin
 
 🔔 为 OpenCode TUI 添加任务完成通知功能

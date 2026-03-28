@@ -1,3 +1,5 @@
+[🇨🇳 中文](INSTALL.md) | [🇺🇸 English](INSTALL.en.md)
+
 # OpenCode Notification Plugin 安装指南
 
 ## 系统要求

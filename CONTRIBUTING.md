@@ -1,3 +1,5 @@
+[🇨🇳 中文](CONTRIBUTING.md) | [🇺🇸 English](CONTRIBUTING.en.md)
+
 # 贡献指南
 
 欢迎为 OpenCode Notification Plugin 贡献代码！
