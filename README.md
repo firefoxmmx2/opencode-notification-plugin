@@ -14,7 +14,36 @@
 
 ## 系统要求
 
-- **Linux**: 需要 `notify-send` 命令（大多数桌面环境已预装）
+- **Linux**: 需要 `notify-send` 命令
+
+### 安装 notify-send
+
+根据您的 Linux 发行版安装相应的软件包：
+
+**Debian/Ubuntu 及其衍生版：**
+```bash
+sudo apt update
+sudo apt install libnotify-bin
+```
+
+**RHEL/CentOS/Fedora 及其衍生版：**
+```bash
+# RHEL/CentOS
+sudo yum install libnotify
+
+# Fedora
+sudo dnf install libnotify
+```
+
+**Arch Linux 及其衍生版：**
+```bash
+sudo pacman -S libnotify
+```
+
+**openSUSE：**
+```bash
+sudo zypper install libnotify-tools
+```
 
 ## 安装方法
 

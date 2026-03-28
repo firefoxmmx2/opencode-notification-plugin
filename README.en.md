@@ -14,7 +14,36 @@
 
 ## System Requirements
 
-- **Linux**: Requires `notify-send` command (pre-installed in most desktop environments)
+- **Linux**: Requires `notify-send` command
+
+### Installing notify-send
+
+Install the appropriate package for your Linux distribution:
+
+**Debian/Ubuntu and derivatives:**
+```bash
+sudo apt update
+sudo apt install libnotify-bin
+```
+
+**RHEL/CentOS/Fedora and derivatives:**
+```bash
+# RHEL/CentOS
+sudo yum install libnotify
+
+# Fedora
+sudo dnf install libnotify
+```
+
+**Arch Linux and derivatives:**
+```bash
+sudo pacman -S libnotify
+```
+
+**openSUSE:**
+```bash
+sudo zypper install libnotify-tools
+```
 
 ## Installation
 
