@@ -4,9 +4,11 @@
 
 ## 系统要求
 
+- **macOS**: 无需额外安装（使用系统自带 `osascript`）
 - **Linux**: 需要 `notify-send` 命令
+- **Windows**: 无需额外安装（使用 PowerShell）
 
-### 安装 notify-send
+### 安装 notify-send（仅 Linux）
 
 根据您的 Linux 发行版安装相应的软件包：
 
@@ -81,21 +83,16 @@ sudo zypper install libnotify-tools
 
 ## 安装方法
 
-1. **下载插件文件**
+1. **构建项目**
    
    ```bash
-   # 克隆仓库
-   git clone https://github.com/firefoxmmx2/opencode-notification-plugin.git
-   cd opencode-notification-plugin
-   
-   # 或者直接下载 notification.js 文件
-   curl -O https://raw.githubusercontent.com/firefoxmmx2/opencode-notification-plugin/main/src/index.ts
+   bun run build
    ```
 
 2. **复制插件到 OpenCode 插件目录**
    
    ```bash
-   cp src/index.ts ~/.config/opencode/plugins/notification.js
+   cp dist/index.js ~/.config/opencode/plugins/notification.js
    ```
 
 3. **创建配置文件**

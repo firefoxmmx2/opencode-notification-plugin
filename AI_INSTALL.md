@@ -4,13 +4,39 @@
 
 本指南帮助 AI 助手（如 OpenCode、Claude 等）快速安装和配置通知插件。
 
+## 系统要求
+
+- **macOS**: 无需额外安装（使用系统自带 `osascript`）
+- **Linux**: 需要 `notify-send` 命令
+- **Windows**: 无需额外安装（使用 PowerShell）
+
+### 安装 notify-send（仅 Linux）
+
 ## 通过 AI 助手安装
 
 ### OpenCode
 
 如果你是 AI 助手，请执行以下步骤为用户安装插件：
 
-#### 步骤 1: 创建插件文件
+#### 步骤 1: 构建并创建插件文件
+
+```bash
+# 克隆仓库
+git clone https://github.com/firefoxmmx2/opencode-notification-plugin.git
+cd opencode-notification-plugin
+
+# 构建项目
+bun install
+bun run build
+
+# 创建插件目录（如果不存在）
+mkdir -p ~/.config/opencode/plugins
+
+# 复制插件文件
+cp dist/index.js ~/.config/opencode/plugins/notification.js
+```
+
+或者直接从 GitHub 下载构建好的文件：
 
 ```bash
 # 创建插件目录（如果不存在）
@@ -18,7 +44,7 @@ mkdir -p ~/.config/opencode/plugins
 
 # 下载插件文件
 curl -o ~/.config/opencode/plugins/notification.js \
-  https://raw.githubusercontent.com/firefoxmmx2/opencode-notification-plugin/main/src/index.ts
+  https://raw.githubusercontent.com/firefoxmmx2/opencode-notification-plugin/main/dist/index.js
 ```
 
 #### 步骤 2: 创建配置文件
@@ -50,8 +76,11 @@ EOF
 ls -la ~/.config/opencode/plugins/notification.js
 ls -la ~/.config/opencode/notification.json
 
-# 测试通知系统
+# 测试通知系统（仅 Linux）
 notify-send "插件安装测试" "如果您看到这个通知，说明通知系统正常工作"
+
+# macOS 测试
+osascript -e 'display notification "如果您能看到这个通知，说明通知系统正常工作" with title "插件安装测试"'
 ```
 
 #### 步骤 4: 告知用户

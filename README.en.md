@@ -14,9 +14,11 @@
 
 ## System Requirements
 
+- **macOS**: No additional installation required (uses built-in `osascript`)
 - **Linux**: Requires `notify-send` command
+- **Windows**: No additional installation required (uses PowerShell)
 
-### Installing notify-send
+### Installing notify-send (Linux only)
 
 Install the appropriate package for your Linux distribution:
 
@@ -47,9 +49,14 @@ sudo zypper install libnotify-tools
 
 ## Installation
 
-1. Copy the `dist/index.js` file to OpenCode plugin directory:
+1. Build the project:
    ```bash
-   cp notification.js ~/.config/opencode/plugins/
+   bun run build
+   ```
+
+2. Copy the `dist/index.js` file to OpenCode plugin directory:
+   ```bash
+   cp dist/index.js ~/.config/opencode/plugins/notification.js
    ```
 
 2. Create configuration file `~/.config/opencode/notification.json`:

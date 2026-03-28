@@ -4,9 +4,11 @@
 
 ## System Requirements
 
+- **macOS**: No additional installation required (uses built-in `osascript`)
 - **Linux**: Requires `notify-send` command
+- **Windows**: No additional installation required (uses PowerShell)
 
-### Installing notify-send
+### Installing notify-send (Linux only)
 
 Install the appropriate package for your Linux distribution:
 
@@ -81,21 +83,16 @@ sudo zypper install libnotify-tools
 
 ## Installation Methods
 
-1. **Download Plugin Files**
+1. **Build the project**
    
    ```bash
-   # Clone repository
-   git clone https://github.com/firefoxmmx2/opencode-notification-plugin.git
-   cd opencode-notification-plugin
-   
-   # Or download notification.js directly
-   curl -O https://raw.githubusercontent.com/firefoxmmx2/opencode-notification-plugin/main/src/index.ts
+   bun run build
    ```
 
 2. **Copy Plugin to OpenCode Plugin Directory**
    
    ```bash
-   cp src/index.ts ~/.config/opencode/plugins/notification.js
+   cp dist/index.js ~/.config/opencode/plugins/notification.js
    ```
 
 3. **Create Configuration File**
