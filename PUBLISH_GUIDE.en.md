@@ -49,11 +49,13 @@ After publishing, remember to update placeholders in following files:
 ```
 
 ### README.md
-- Replace all `your-username` with your GitHub username
-- Update installation example repository URL
+- Update all repository URLs to your GitHub repository
 
 ### AI_INSTALL.md
-- Replace all `your-username` with your GitHub username
+- Update download link to:
+  ```
+  https://raw.githubusercontent.com/YOUR_USERNAME/opencode-notification-plugin/main/dist/index.js
+  ```
 
 ## 4. Create GitHub Release
 

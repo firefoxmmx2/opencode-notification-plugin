@@ -49,11 +49,13 @@ git push -u origin main
 ```
 
 ### README.md
-- 将所有 `your-username` 替换为你的 GitHub 用户名
-- 更新安装示例中的仓库 URL
+- 将所有仓库 URL 更新为你的 GitHub 仓库
 
 ### AI_INSTALL.md
-- 将所有 `your-username` 替换为你的 GitHub 用户名
+- 更新下载链接中的仓库 URL 为：
+  ```
+  https://raw.githubusercontent.com/YOUR_USERNAME/opencode-notification-plugin/main/dist/index.js
+  ```
 
 ## 4. 创建 GitHub Release
 

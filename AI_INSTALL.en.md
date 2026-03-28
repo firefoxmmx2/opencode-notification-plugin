@@ -111,8 +111,8 @@ After installation, help user verify:
 
 **Solution:**
 ```bash
-# Redownload plugin file
-curl -o ~/.config/opencode/plugins/notification.js https://raw.githubusercontent.com/firefoxmmx2/opencode-notification-plugin/main/src/index.ts
+# Redownload plugin file (using built dist/index.js)
+curl -o ~/.config/opencode/plugins/notification.js https://raw.githubusercontent.com/firefoxmmx2/opencode-notification-plugin/main/dist/index.js
 ```
 
 ### Issue 2: Configuration File Syntax Error

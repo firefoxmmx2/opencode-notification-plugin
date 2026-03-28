@@ -49,10 +49,14 @@ sudo zypper install libnotify-tools
 
 ## 安装方法
 
-1. 下载 `notification.js` 文件：
+1. 构建项目：
    ```bash
-   curl -o ~/.config/opencode/plugins/notification.js \
-     https://raw.githubusercontent.com/firefoxmmx2/opencode-notification-plugin/main/notification.js
+   bun run build
+   ```
+
+2. 将 `dist/index.js` 文件复制到 OpenCode 插件目录：
+   ```bash
+   cp dist/index.js ~/.config/opencode/plugins/notification.js
    ```
 
 2. 创建配置文件 `~/.config/opencode/notification.json`：

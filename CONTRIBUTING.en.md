@@ -19,7 +19,14 @@ Welcome to contribute to OpenCode Notification Plugin!
 
 3. **Local Testing**
    
-   Copy `src/index.ts` to OpenCode plugin directory:
+   Build project and copy to OpenCode plugin directory:
+   ```bash
+   bun install
+   bun run build
+   cp dist/index.js ~/.config/opencode/plugins/notification.js
+   ```
+   
+   Or use TypeScript source file directly (recommended for development):
    ```bash
    cp src/index.ts ~/.config/opencode/plugins/notification.js
    ```

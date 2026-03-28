@@ -19,7 +19,14 @@
 
 3. **本地测试**
    
-   将 `src/index.ts` 复制到 OpenCode 插件目录：
+   构建项目并复制到 OpenCode 插件目录：
+   ```bash
+   bun install
+   bun run build
+   cp dist/index.js ~/.config/opencode/plugins/notification.js
+   ```
+   
+   或者直接使用 TypeScript 源文件（推荐用于开发）：
    ```bash
    cp src/index.ts ~/.config/opencode/plugins/notification.js
    ```
